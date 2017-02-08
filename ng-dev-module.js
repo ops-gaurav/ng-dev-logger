@@ -20,7 +20,7 @@ devModule.factory('devlogger', ['$log', function($log) {
                 timestamp = new Date();
             else
                 timestamp = '';
-            $log.log("%c" + timestamp + 'ERROR:: ' + message, "color: brightred; font-weight: bold");
+            $log.log("%c" + timestamp + 'ERROR:: ' + message, "color: red; font-weight: bold");
         },
         info: function(message, timestamp = false) {
             if (timestamp)
