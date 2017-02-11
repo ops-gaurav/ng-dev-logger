@@ -34,7 +34,7 @@ devModule.factory('devlogger', ['$log', function($log) {
                 timestamp = new Date();
             else
                 timestamp = '';
-            $log.log("%c" + timestamp + 'WARNING:: ' + message, 'color: brightblue;font-weight: bold;');
+            $log.log("%c" + timestamp + 'WARNING:: ' + message, 'color: orange;font-weight: bold;');
         },
 
         highlightLog: function(message, timestamp = false) {
